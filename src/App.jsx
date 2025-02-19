@@ -1,0 +1,13 @@
+import Hero from "./components/Hero";
+import Navbar from "./components/Navbar";
+
+function App() {
+  return (
+    <div className="w-full min-h-screen pb-5 bg-black ">
+      <Navbar />
+      <Hero />
+    </div>
+  );
+}
+
+export default App;
