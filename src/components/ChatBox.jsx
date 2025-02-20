@@ -14,7 +14,7 @@ const ChatBox = ({ setIsChat }) => {
               {chat}
             </button>
             <div className="flex flex-col">
-              <h2 className="text-xl">Chat Bot</h2>
+              <h2 className="text-xl">Chat Box</h2>
               <p className="text-xs">Online</p>
             </div>
           </div>
