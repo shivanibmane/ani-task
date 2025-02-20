@@ -1,5 +1,5 @@
 import Hero from "./components/Hero";
-import Logo from "./components/logo";
+import Logos from "./components/Logos";
 import Navbar from "./components/Navbar";
 
 function App() {
@@ -7,7 +7,7 @@ function App() {
     <div className="w-full min-h-screen pb-5 bg-black ">
       <Navbar />
       <Hero />
-      <Logo />
+      <Logos />
     </div>
   );
 }

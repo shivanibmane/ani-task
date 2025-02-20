@@ -7,7 +7,7 @@ import salesforce from "../assets/logos/salesforce.png";
 import sony from "../assets/logos/sony.png";
 import workday from "../assets/logos/workday.png";
 
-const Logo = () => {
+const Logos = () => {
   return (
     <>
       <div className=" sm:block sm:w-9/12 overflow-hidden my-10  mx-auto animated-loop-scroll">
@@ -40,4 +40,4 @@ const Logo = () => {
   );
 };
 
-export default Logo;
+export default Logos;
