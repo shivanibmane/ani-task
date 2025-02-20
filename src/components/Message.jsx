@@ -1,8 +1,8 @@
 import React from "react";
 import { useState } from "react";
 import { Dialog, DialogBackdrop, DialogPanel } from "@headlessui/react";
-import { chat } from "./constant";
 import ChatBox from "./ChatBox";
+import chat_icon from "../assets/message.svg";
 
 const Message = () => {
   const [isChat, setIsChat] = useState(false);
@@ -12,7 +12,7 @@ const Message = () => {
         className="hidden ml-3 -mt-6 border bg-gray-800 hover:scale-105 duration-75  ease-in-out font-medium rounded-full text-sm p-2.5 text-center sm:flex  dark:border-[#4e5b7e]"
         onClick={() => setIsChat(true)}
       >
-        {chat}
+        <img src={chat_icon} alt="Chat-icon" />
       </button>
       <Dialog
         open={isChat}

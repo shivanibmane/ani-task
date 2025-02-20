@@ -1,42 +1,41 @@
 import React from "react";
-import amazon from "../assets/logos/amazon.png";
-import cocacola from "../assets/logos/cocacola.png";
-import google from "../assets/logos/google.png";
-import intel from "../assets/logos/intel.png";
-import salesforce from "../assets/logos/salesforce.png";
-import sony from "../assets/logos/sony.png";
-import workday from "../assets/logos/workday.png";
+import { logos } from "./constant";
+import LogoWrapper from "./LogoWrapper";
+import { socialMediaLogos } from "./constant";
 
 const Logos = () => {
   return (
-    <>
-      <div className=" sm:block sm:w-9/12 overflow-hidden my-10  mx-auto animated-loop-scroll">
-        <div className="flex items-center  space-x-10 animate-loop-scroll">
-          <img src={workday} alt="workday" className="w-[68px] h-[68px]" />
-          <img src={google} alt="google" className="w-[90px] h-[90px]" />
-          <img
-            src={salesforce}
-            alt="salesforce"
-            className="w-[90px] h-[90px]"
-          />
-          <img src={amazon} alt="amazon" className="w-[90px] h-[46px]" />
-          <img src={sony} alt="sony" className="w-[90px] h-[90px]" />
-          <img src={cocacola} alt="cocacola" className="w-[90px] h-[28px]" />
-          <img src={intel} alt="intel" className="w-[90px] h-[60px]" />
-          <img src={workday} alt="workday" className="w-[68px] h-[68px]" />
-          <img src={google} alt="google" className="w-[90px] h-[90px]" />
-          <img
-            src={salesforce}
-            alt="salesforce"
-            className="w-[90px] h-[90px]"
-          />
-          <img src={amazon} alt="amazon" className="w-[90px] h-[46px]" />
-          <img src={sony} alt="sony" className="w-[90px] h-[90px]" />
-          <img src={cocacola} alt="cocacola" className="w-[90px] h-[28px]" />
-          <img src={intel} alt="intel" className="w-[90px] h-[60px]" />
+    <div className="w-full flex flex-col items-center space-y-7 ">
+      <div className="sm:block sm:w-9/12 overflow-hidden my-10 mx-auto animated-loop-scroll ">
+        <div className="flex items-center space-x-10 animate-loop-scroll">
+          {logos.map((logo, index) => (
+            <img
+              key={index}
+              src={logo.src}
+              alt={logo.alt}
+              className={`w-[${logo.width}] h-[${logo.height}]`}
+            />
+          ))}
         </div>
       </div>
-    </>
+      <div className="flex flex-col space-y-4 items-center ">
+        <h1>Adtask AI works with :</h1>
+        <div className="grid grid-cols-3 sm:flex sm:space-x-10 space-x-2 ">
+          {socialMediaLogos.map((socialMediaLogo) => (
+            <div>
+              <LogoWrapper>
+                <img
+                  src={socialMediaLogo.src}
+                  alt={socialMediaLogo}
+                  key={socialMediaLogo}
+                />
+              </LogoWrapper>
+              <p className="text-center text-sm my-4">{socialMediaLogo.name}</p>
+            </div>
+          ))}
+        </div>
+      </div>
+    </div>
   );
 };
 

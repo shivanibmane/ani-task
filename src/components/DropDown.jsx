@@ -7,7 +7,7 @@ const DropDown = ({ title, icon, itemList }) => {
       <Menu as="div" className="relative inline-block text-left">
         <MenuButton className="flex items-center gap-1 w-full justify-center gap-x-1.5 rounded-md  sm:px-3 sm:py-2">
           <span>{title}</span>
-          <span>{icon}</span>
+          <img src={icon} alt="Dropdown-icon" />
         </MenuButton>
         <MenuItems
           transition

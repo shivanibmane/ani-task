@@ -1,5 +1,5 @@
 import React from "react";
-import { chat } from "./constant";
+import chat_icon from "../assets/message.svg";
 
 const ChatBox = ({ setIsChat }) => {
   return (
@@ -11,7 +11,7 @@ const ChatBox = ({ setIsChat }) => {
               className="hidden border bg-gray-800 font-medium rounded-full text-sm py-3 px-3 text-center sm:flex  dark:border-[#4e5b7e]"
               onClick={() => setIsChat(true)}
             >
-              {chat}
+              <img src={chat_icon} alt="Chat-icon" />
             </button>
             <div className="flex flex-col">
               <h2 className="text-xl">Chat Box</h2>

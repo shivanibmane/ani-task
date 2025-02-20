@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import DropDown from "./DropDown";
-import { dropDownIcon, rightArrow } from "./constant";
+import dropdown_icon from "../assets/dropdownicon.svg";
+import right_arrow from "../assets/right-arrow.svg";
 import { productsList, seoTools } from "./constant";
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -51,16 +52,20 @@ const Navbar = () => {
             )}
           </div>
           <div className="hidden sm:flex  sm:space-x-20 md:space-x-28">
-            <nav className="flex gap-7 items-center text-md">
+            <nav className="flex gap-3 items-center text-md">
               <DropDown
                 title="Products"
-                icon={dropDownIcon}
+                icon={dropdown_icon}
                 itemList={productsList}
               />
-              <DropDown title="Tools" icon={dropDownIcon} itemList={seoTools} />
+              <DropDown
+                title="Tools"
+                icon={dropdown_icon}
+                itemList={seoTools}
+              />
               <p>Contact Us</p>
             </nav>
-            <div className="sm:flex ">
+            <div className="sm:flex">
               <button className="relative py-2.5 px-8 me-2 text-sm font-medium focus:outline-none bg-white rounded-full border border-gray-200  focus:ring-gray-100 dark:bg-black dark:text-white dark:border-gray-600 dark:hover:text-gray-400 overflow-hidden">
                 <span className="relative z-10">Log in</span>
                 <span className="absolute -bottom-4 blur-lg left-0 w-6/12 h-5 bg-gray-400 mx-6 rounded-full"></span>
@@ -149,14 +154,14 @@ const Navbar = () => {
                   onClick={() => setIsItems(true)}
                 >
                   <p>Product</p>
-                  <span>{rightArrow}</span>
+                  <img src={right_arrow} alt="RightArrow" />
                 </div>
                 <div
                   className="flex gap-3 items-center"
                   onClick={() => setIsItems(true)}
                 >
                   <p>Tools</p>
-                  <span>{rightArrow}</span>
+                  <img src={right_arrow} alt="RightArrow" />
                 </div>
                 <p>Contact Us</p>
               </nav>
