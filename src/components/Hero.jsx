@@ -4,12 +4,12 @@ import Message from "./Message";
 const Hero = () => {
   return (
     <>
-      <div className="relative text-center flex justify-center max-w-[700px] mx-auto">
+      <div className="relative text-center flex justify-center max-w-[700px] mx-auto overflow-hidden">
         <div
-          className="absolute w-0 h-0 top-0
+          className="absolute sm:w-0 sm:h-0 top-0 w-96
        border-l-[300px] border-l-transparent
        border-b-[500px] border-b-[#7687B5]
-       border-r-[300px] border-r-transparent blur-2xl shadow-sm opacity-50 overflow-hidden"
+       border-r-[300px] border-r-transparent blur-2xl shadow-sm opacity-50"
         ></div>
         <div className="flex flex-col mt-20 items-center gap-10">
           <div className="flex gap-1 border w-80 sm:w-96 bg-[#36363647] border-gray-500 items-center rounded-2xl py-2 sm:px-6 px-4">
@@ -53,9 +53,9 @@ const Hero = () => {
           </div>
         </div>
       </div>
-      <div className="relative overflow-hidden w-[350px] h-[250px] sm:w-[700px] sm:h-[400px] flex mx-auto rounded-2xl p-0.5">
-        <div className="animate-rotate absolute inset-0 h-full w-full rounded-full bg-[conic-gradient(#4e5b7e_20deg,transparent_120deg)]"></div>
-        <div className="relative w-[350px] h-[250px] sm:w-[700px] sm:h-[400px] bg-black border border-[#4e5b7e] rounded-2xl flex items-center z-50 mb-1  text-center">
+      <div className="relative overflow-hidden w-[350px] h-[250px] sm:w-[700px] sm:h-[400px] flex mx-auto rounded-2xl p-0.5 ">
+        <div className="absolute animate-rotate inset-0 h-full w-full rounded-full bg-[conic-gradient(#4e5b7e_20deg,transparent_120deg)] "></div>
+        <div className="relative w-full bg-black border border-[#4e5b7e] rounded-2xl flex items-center z-50 text-center">
           <h1 className="text-6xl sm:text-8xl bg-gradient-to-b from-[#fcfcfd] to-[#6f6f70] bg-clip-text  text-transparent opacity-15 mx-auto">
             AdTask.ai
           </h1>

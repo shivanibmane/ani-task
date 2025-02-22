@@ -15,12 +15,14 @@ export default {
       animation: {
         rotate: "rotate 4s linear infinite",
         "loop-scroll": "loop-scroll 7s linear infinite",
+        pingSlow: "ping 3s linear infinite",
+        pingFast: "ping 500ms linear infinite",
       },
 
       keyframes: {
         rotate: {
-          "0%": { transform: "rotate(0deg) scale(10)" },
-          "100%": { transform: "rotate(-360deg) scale(10)" },
+          "0%": { transform: "rotate(-360deg) scale(10)" },
+          "100%": { transform: "rotate(0deg) scale(10)" },
         },
         "loop-scroll": {
           from: { transform: "translateX(50)" },
