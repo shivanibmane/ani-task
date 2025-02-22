@@ -6,7 +6,7 @@ import { socialMediaLogos } from "./constant";
 const Logos = () => {
   return (
     <div className="w-full flex flex-col items-center space-y-7 ">
-      <div className="sm:block sm:w-9/12 overflow-hidden my-10 mx-auto animated-loop-scroll ">
+      <div className="w-full sm:block sm:w-9/12 overflow-hidden my-10 mx-auto animated-loop-scroll ">
         <div className="flex items-center space-x-10 animate-loop-scroll">
           {logos.map((logo, index) => (
             <img
