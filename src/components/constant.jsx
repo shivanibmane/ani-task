@@ -174,3 +174,30 @@ export const services = [
       "Centralize and streamline your ad management. Our intelligent engine automatically adjusts bids, budgets, and targeting to maximize results.",
   },
 ];
+
+export const testinomials = [
+  {
+    info: "“We used to struggle with consistent branding across platforms. adTask’s unified dashboard ensures our message stays on point every single time.”",
+    desc: "-Brand Director at a Tech Startup",
+  },
+  {
+    info: "“adTask turned our complicated campaigns into a breeze. The built-in AI agents helped us reach exactly the customers we wanted—without guesswork!”",
+    desc: "–Head of Growth at Tech Startup",
+  },
+  {
+    info: "“We’ve tried other platforms before, but none delivered the depth of insights adTask offers. Our conversion rates are up by 35% since we signed on!”",
+    desc: "– Ecommerce Manager at Home Décor Brand",
+  },
+  {
+    info: "“What impressed me most was the real-time optimization. adTask’s intelligent agents just keep refining our campaigns—our ad spend has never worked harder!”",
+    desc: "–Digital Strategist at SaaS Company",
+  },
+  {
+    info: "“adTask made everything from campaign setup to performance tracking simple. Our team can now focus on creating great content rather than crunching numbers.”",
+    desc: "–Social Media Lead at Non-Profit Organization",
+  },
+  {
+    info: "“We’ve seen a 50% boost in engagement across our social channels since switching to adTask. Its AI-driven insights are game-changing!”",
+    desc: "–Social Media Manager at a Fitness Brand",
+  },
+];
