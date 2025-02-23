@@ -2,6 +2,7 @@ import Features from "./components/Features";
 import Hero from "./components/Hero";
 import Logos from "./components/Logos";
 import Navbar from "./components/Navbar";
+import Services from "./components/Services";
 
 function App() {
   return (
@@ -10,6 +11,7 @@ function App() {
       <Hero />
       <Logos />
       <Features />
+      <Services />
     </div>
   );
 }
