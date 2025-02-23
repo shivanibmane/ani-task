@@ -3,6 +3,7 @@ import Hero from "./components/Hero";
 import Logos from "./components/Logos";
 import Navbar from "./components/Navbar";
 import Services from "./components/Services";
+import Testinomial from "./components/Testinomial";
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
       <Logos />
       <Features />
       <Services />
+      <Testinomial />
     </div>
   );
 }
