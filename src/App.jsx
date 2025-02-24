@@ -5,6 +5,7 @@ import Logos from "./components/Logos";
 import Navbar from "./components/Navbar";
 import Services from "./components/Services";
 import Testinomial from "./components/Testinomial";
+import TrialCallout from "./components/TrialCallout";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
       <Services />
       <Testinomial />
       <Contact />
+      <TrialCallout />
     </div>
   );
 }
