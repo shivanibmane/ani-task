@@ -1,3 +1,4 @@
+import Contact from "./components/Contact";
 import Features from "./components/Features";
 import Hero from "./components/Hero";
 import Logos from "./components/Logos";
@@ -14,6 +15,7 @@ function App() {
       <Features />
       <Services />
       <Testinomial />
+      <Contact />
     </div>
   );
 }
