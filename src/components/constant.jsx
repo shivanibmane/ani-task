@@ -17,6 +17,9 @@ import eco_icon from "../assets/eco-icon.svg";
 import material from "../assets/material.svg";
 import network from "../assets/network.svg";
 import seo from "../assets/seo.svg";
+import email from "../assets/email.svg";
+import phone from "../assets/phone.svg";
+import location from "../assets/location.svg";
 
 export const productsList = [
   "Optimize",
@@ -199,5 +202,20 @@ export const testinomials = [
   {
     info: "“We’ve seen a 50% boost in engagement across our social channels since switching to adTask. Its AI-driven insights are game-changing!”",
     desc: "–Social Media Manager at a Fitness Brand",
+  },
+];
+
+export const contacts = [
+  {
+    title: "contact@adtask.ai",
+    img: email,
+  },
+  {
+    title: "(969) 819-8061",
+    img: phone,
+  },
+  {
+    title: "San Francisco Bay Area",
+    img: location,
   },
 ];
